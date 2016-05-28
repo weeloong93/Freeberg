@@ -8,7 +8,7 @@ Freeberg is a webapp that serves to provide users with live stock information at
 As business students, we want to be able to analyze live data and produce relevant analytics for the many finance projects that we do, and especially - for free.
 
 ##Definition of the Problem
-While the financial industry has many applications which do financial analytics (e.g. Bloomberg), they are extremely costly and unaffordable for students such as us. The problem occurs when stocks have to be compared between one another and shown in a graphical format.Extracting data from Yahoo Finance individually and across multiple stocks becomes a tedious process as one has to manually extract the data for each stock . 
+While the financial industry has many applications which do financial analytics (e.g. Bloomberg), they are extremely costly and unaffordable for students such as us. The problem occurs when stocks have to be compared between one another and shown in a graphical format. Extracting data from Yahoo Finance individually and across multiple stocks becomes a tedious process as one has to manually extract the data for each stock . 
 
 With these problems in mind, Freeberg aims to resolve these issues by allowing the user to extract this data efficiently and use for the relevant analysis of publicly traded stocks.
 
