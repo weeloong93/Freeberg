@@ -25,6 +25,9 @@ We are currently aiming for the `Project: Gemini` achievement. We plan to fulfil
 * Application-specific feature extensions - Exporting Graphical Data
 * Comparison between multiple models
 
+Optional Features:
+* User saved stock list
+
 #Project Timeline
 As business students with relatively less exposure to frameworks and coding, we expect to spend a lot more time learning the relevant processes. In view of this, we have structured the timeline for our project as follows:
 
@@ -40,4 +43,4 @@ At this point, we have a solidified our knowledge on HTML/bootstrap and using Dj
 2. Finish Stock Track Page
 3. Start working on comparisons
 
-By Milestone 2, we plan to have our stock tracker page up and running. This will include displaying historical prices of stocks in a graphical format. We also hope to have experimented with at least one stock comparison. 
+By Milestone 2, we plan to have our stock tracker page up and running. This will include displaying historical prices of stocks in a graphical format. We also hope to have experimented with at least one stock comparison.
