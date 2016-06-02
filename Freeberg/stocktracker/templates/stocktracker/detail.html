@@ -1,10 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'stocktracker/base.html' %}
 
-</body>
-</html>
+
+{% block body %}
+<div class="albums-container container-fluid">
+
+    <div class="row">
+        </div>
+        {% if stocks %}
+            {% for stock in stocks %}
+                <div class="col-sm-4 col-lg-2">
+                    <h2>{{ stock.ticker }} </h2>
+                    <h2>{{ stock.lastprice }} </h2>
+                    <!--<h2>{{ hprice }} </h2>-->
+                    <!--<h2>{{ thedate }} </h2>-->
+                    <table>
+                        {% for values in historical_price %}
+                         <tr>
+                            <td>{{ values }}</td>
+                         </tr>
+                        {% endfor %}
+                    </table>
+            {% endfor %}
+
+        {% else %}
+            <div class="col-sm-12">
+                <br>
+                <a href="#">
+                    <button type="button" class="btn btn-success">
+                        <span class="glyphicon glyphicon-plus"></span>&nbsp; Add a Stock
+                    </button>
+                </a>
+            </div>
+        {% endif %}
+</div>
+</div>
+<link href="http://cdn.pydata.org/bokeh/release/bokeh-0.11.1.min.css" rel="stylesheet" type="text/css">
+<script src="http://cdn.pydata.org/bokeh/release/bokeh-0.11.1.min.js"></script>
+
+{{ the_div|safe }}
+{{ the_script|safe }}
+
+
+{% endblock %}

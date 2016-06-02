@@ -1,0 +1,26 @@
+.image {
+    position:relative;
+}
+
+.text {
+    left: 0;
+    position:relative;
+    text-align:center;
+    /* relative position to shift the overlay up*/
+    top: -150px;
+    width: 100%;
+    background-color:rgba(0,0,0, 0.7);
+    color:white;
+    padding: 20px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.navbar {
+    margin:0;
+    border-radius:0;
+}
+
+.nav{
+    font-family: "Tekton Pro Ext", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}

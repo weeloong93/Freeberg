@@ -21,6 +21,7 @@ from rest_framework.urlpatterns import format_suffix_patterns
 from stocktracker import views
 
 urlpatterns = [
+    url(r'^', include('stocktracker.urls')),
     url(r'^admin/', admin.site.urls),
     url(r'^stocktracker/',include('stocktracker.urls')),
 ]
