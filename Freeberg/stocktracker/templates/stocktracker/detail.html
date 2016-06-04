@@ -2,17 +2,33 @@
 
 
 {% block body %}
+
 <div class="albums-container container-fluid">
 
-    <div class="row">
+    <form class="search form-inline" role="form">
+        <div class="form-group">
+            <label for="company">Company:</label>
+            <input type="text" class="form-control" id="company">
         </div>
+        <div class="form-group">
+            <label for="startdate">From:</label>
+            <input type="date" class="form-control" id="startdate">
+        </div>
+        <div class="form-group">
+            <label for="enddate">To:</label>
+            <input type="date" class="form-control" id="enddate">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+    <div class="row">
         {% if stocks %}
             {% for stock in stocks %}
-                <div class="col-sm-4 col-lg-2">
-                    <h2>{{ stock.ticker }} </h2>
-                    <h2>{{ stock.lastprice }} </h2>
+                <div class="col-sm-4">
+                    <h2>Company:{{ stock.ticker }} </h2>
+                    <h2>{{ stock.lastprice }}USD </h2>
                     <!--<h2>{{ hprice }} </h2>-->
                     <!--<h2>{{ thedate }} </h2>-->
+                <!-- graph??-->
                     <table>
                         {% for values in historical_price %}
                          <tr>
@@ -21,6 +37,7 @@
                         {% endfor %}
                     </table>
             {% endfor %}
+                </div>
 
         {% else %}
             <div class="col-sm-12">
@@ -32,13 +49,39 @@
                 </a>
             </div>
         {% endif %}
-</div>
-</div>
+
+    </div>
+
 <link href="http://cdn.pydata.org/bokeh/release/bokeh-0.11.1.min.css" rel="stylesheet" type="text/css">
 <script src="http://cdn.pydata.org/bokeh/release/bokeh-0.11.1.min.js"></script>
-
-{{ the_div|safe }}
+    {{ the_div|safe }}
 {{ the_script|safe }}
+    <div class="company-profile col-md-6">
+            <h2>COMPANY NAME</h2>
+            <p>COmpany details: PLease fill up some of the relevant company details here. I think we need to save the company information to the thingy  </p>
+    </div>
+    <div class="company-fr col-md-6 table-responsive">
+        <h2>Company finanial ratio</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Financial Ratio</th>
+                    <th>Rates</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Market Cap</td>
+                    <td>company.marketcap</td>
+                </tr>
+                <tr>
+                    <td>PE ratio</td>
+                    <td>company.peratio</td>
+                </tr>
+            </tbody>
 
+        </table>
 
+    </div>
+</div>
 {% endblock %}

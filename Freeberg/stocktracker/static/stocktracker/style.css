@@ -1,11 +1,27 @@
-body{
-    background: white url("images/background.png");
-}
+/* for base template*/
+body{background: white;}
 
 .navbar{
     border-radius:0;
+    margin:0;
 }
 
-.navbar-brand{
-    font-family: 'Satisfy','cursive';
+.navbar-brand{font-family: 'Satisfy','cursive';}
+
+.nav{
+     font-size: 16px;
+}
+
+
+.text {
+    left: 0;
+    position:relative;
+    text-align:center;
+    /* relative position to shift the overlay up*/
+    top: -150px;
+    width: 100%;
+    background-color:rgba(0,0,0, 0.7);
+    color:white;
+    padding: 20px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
