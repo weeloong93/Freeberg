@@ -40,9 +40,9 @@ def detail(request, stock_id):
             dates_objects.append(datetime.strptime(d,'%Y-%m-%d'))
 
         # Line Graph - Values are [x,y}
-        TOOLS = 'box_zoom,box_select,crosshair,resize,hover, reset'
+        TOOLS = 'crosshair,hover'
 
-        plot = figure(x_axis_type="datetime", tools = TOOLS)
+        plot = figure(x_axis_type="datetime", responsive = True ,plot_height=250, tools = TOOLS, toolbar_location=None)
         plot.line(dates_objects,stock_prices)
 
         script, div = components(plot, CDN)
