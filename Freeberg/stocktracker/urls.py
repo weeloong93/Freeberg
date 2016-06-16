@@ -5,6 +5,7 @@ app_name = 'stocktracker'
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
-    url(r'^(?P<stock_id>[0-9]+)/$', views.detail, name='detail'),
+    url(r'^allstocks/$', views.allstocks, name='allstocks'),
+    url(r'^(?P<stock_id>[0-9]+)/$', views.individual_stock, name='individual_stock'),
 
 ]

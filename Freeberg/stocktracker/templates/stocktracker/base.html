@@ -24,15 +24,24 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a href="#" class="navbar-brand">FreeBerg</a>
+                        <a href="{% url 'stocktracker:index' %}" class="navbar-brand">FreeBerg</a>
                     </div>
                     <div class="collapse navbar-collapse" id="MainNavBar">
                         <!--left navbar-->
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="#">My Stocks</a></li>
-                            <li><a href="#">Stocktrack</a></li>
+                            <li><a href="{% url 'stocktracker:allstocks' %}">Stocktrack</a></li>
                             <li><a href="#">Comparisons</a></li>
                         </ul>
+
+                        <!--Working Search Bar-->
+                        <form class="navbar-form navbar-left" role="search" method="GET" action="">
+                            <div class="form-group">
+                            <input type="text" class="form-control" name="q" value="{{ request.GET.q }}">
+                            </div>
+                        <button type="submit" class="btn btn-default">Search</button>
+                        </form>
+
                         <!--Right navbar-->
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="#">Logout</a></li>

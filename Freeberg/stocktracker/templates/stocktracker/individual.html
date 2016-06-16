@@ -14,12 +14,13 @@
     </form>
 
     <div class="row">
-        {% for stock in stocks %}
+
             <div class="col-sm-4">
+
                 <h2>{{ stock.ticker }},
-                {{ stock.lastprice }}USD </h2>
-                <!--<h2>{{ hprice }} </h2>-->
-                <!--<h2>{{ thedate }} </h2>-->
+                {{ stock.lastprice }}SGD </h2>
+
+
             </div>
             <div class="col-sm-8">
                 <form class="search form-inline" role="form">
@@ -34,27 +35,24 @@
                     <button type="submit" class="btn btn-default">Submit</button>
                 </form>
             </div>
-            <!-- graph??-->
-                 <div class="container">
-                    <table>
-                        {% for values in historical_price %}
-                         <tr>
-                            <td>{{ values }}</td>
-                         </tr>
-                        {% endfor %}
-                    </table>
-                 </div>
-
-        {% endfor %}
     </div>
 
-<link href="http://cdn.pydata.org/bokeh/release/bokeh-0.11.1.min.css" rel="stylesheet" type="text/css">
-<script src="http://cdn.pydata.org/bokeh/release/bokeh-0.11.1.min.js"></script>
+    <!-- Graph-->
+    <link href="http://cdn.pydata.org/bokeh/release/bokeh-0.11.1.min.css" rel="stylesheet" type="text/css">
+    <link href="http://cdn.pydata.org/bokeh/release/bokeh-widgets-0.11.0.css" rel="stylesheet">
+    <script src="http://cdn.pydata.org/bokeh/release/bokeh-0.11.1.min.js"></script>
+    <script src="http://cdn.pydata.org/bokeh/release/bokeh-widgets-0.11.1.min.js"></script>
+    <script src="http://cdn.pydata.org/bokeh/release/bokeh-widgets-0.11.1.min.css"></script>
+
+    {{ widget_div|safe }}
+    {{ widget_script|safe }}
+
     {{ the_div|safe }}
-{{ the_script|safe }}
+    {{ the_script|safe }}
+
     <div class="company-profile col-md-6">
             <h2>Company Name</h2>
-            <p>COmpany details: PLease fill up some of the relevant company details here. I think we need to save the company information to the thingy  </p>
+            <p>{{stock.description}}</p>
     </div>
     <div class="company-fr col-md-6 table-responsive">
         <h2>Company finanial ratio</h2>
