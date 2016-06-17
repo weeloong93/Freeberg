@@ -1,0 +1,165 @@
+[33mcommit b209a9a91cc95ffca2d47fed88b340cf87180212[m
+Author: weeloong93 <weeloong.ng@u.nus.edu>
+Date:   Fri Jun 17 11:09:06 2016 +0800
+
+    database
+
+[33mcommit 94c1aa0b379e367b0517deec7bddfcd1d3a6637e[m
+Author: Niaoshendan <Nelsontwb@hotmail.com>
+Date:   Fri Jun 17 00:02:37 2016 +0800
+
+    Revert "commit"
+    
+    This reverts commit 78d09f6f7ee63557e503274eb08c8db3ddd6b729.
+
+[33mcommit 78a7948c7038d5e8656fdb0f786605399082e6ca[m
+Merge: 78d09f6 b87550e
+Author: Niaoshendan <Nelsontwb@hotmail.com>
+Date:   Thu Jun 16 23:38:11 2016 +0800
+
+    commit
+    
+    nothing
+
+[33mcommit 78d09f6f7ee63557e503274eb08c8db3ddd6b729[m
+Author: Niaoshendan <Nelsontwb@hotmail.com>
+Date:   Thu Jun 16 23:27:16 2016 +0800
+
+    commit
+    
+    nothing
+
+[33mcommit b87550e6540fcf37e660d9017b2f9c79f9f049c6[m
+Author: weeloong93 <weeloong.ng@u.nus.edu>
+Date:   Thu Jun 16 23:24:14 2016 +0800
+
+    Refining Bokeh plots
+
+[33mcommit 2b5afbf4a006dd02fab8d5469e37c3c19ede37cc[m
+Author: Niaoshendan <Nelsontwb@hotmail.com>
+Date:   Sat Jun 11 00:52:08 2016 +0800
+
+    details and index page changes
+    
+    made bokeh graph responsive, clean ups tool and divided space for forms
+
+[33mcommit a8c4b15e4943e254e5d148cf4bf14b66a763831f[m
+Merge: 4dbaa3d ccd9d2a
+Author: weeloong93 <weeloong.ng@u.nus.edu>
+Date:   Sun Jun 5 01:24:41 2016 +0800
+
+    Merge pull request #1 from weeloong93/stocktracker
+    
+    Stocktracker
+
+[33mcommit ccd9d2ae20569e394bee369a939a9306365005e9[m
+Author: Niaoshendan <Nelsontwb@hotmail.com>
+Date:   Sun Jun 5 01:02:23 2016 +0800
+
+    changed forms
+    
+    include company search and startdate end date button
+
+[33mcommit 5658bea17fe1ddf3ad25d07c3830af7b1cd2b1dd[m
+Author: Niaoshendan <Nelsontwb@hotmail.com>
+Date:   Sun Jun 5 00:15:10 2016 +0800
+
+    addition of form
+    
+    created company form
+
+[33mcommit b70f413c70fc4d090e762c90b200c4dd381d7a3c[m
+Author: Niaoshendan <Nelsontwb@hotmail.com>
+Date:   Sat Jun 4 23:29:17 2016 +0800
+
+    Changes in stocktracker page
+    
+    Create company description with tables
+
+[33mcommit 460afd772898f32982c502636891cf734ccb96c8[m
+Author: Niaoshendan <Nelsontwb@hotmail.com>
+Date:   Fri Jun 3 00:54:20 2016 +0800
+
+    changes in css
+    
+    refining homepage
+
+[33mcommit 4dbaa3d68c8065454f3ff2589661391e5b8c3b60[m
+Author: weeloong93 <weeloong.ng@u.nus.edu>
+Date:   Thu Jun 2 17:01:57 2016 +0800
+
+    Adding in HTML
+
+[33mcommit ba62ef39792c3ed406f8ca66b4a2994f319d5431[m
+Author: weeloong93 <weeloong.ng@u.nus.edu>
+Date:   Sat May 28 16:46:13 2016 +0800
+
+    Updated README.md
+
+[33mcommit 5b2fb602430026d6e11ab09fbdeb9d0388e88665[m
+Author: weeloong93 <weeloong.ng@u.nus.edu>
+Date:   Sat May 28 16:42:57 2016 +0800
+
+    Updated README.md
+
+[33mcommit 08a75626ed804ed1bf49030506cfba8a8eb3d5c4[m
+Author: weeloong93 <weeloong.ng@u.nus.edu>
+Date:   Sat May 28 16:42:05 2016 +0800
+
+    Updated README.md
+
+[33mcommit 84283ab24be9797640af070f348d459d525e6bb3[m
+Author: weeloong93 <weeloong.ng@u.nus.edu>
+Date:   Sat May 28 16:41:07 2016 +0800
+
+    Updated README.md
+
+[33mcommit dea090ef7a18c9498fdaa4416306d6371040b105[m
+Author: weeloong93 <weeloong.ng@u.nus.edu>
+Date:   Sat May 28 16:40:40 2016 +0800
+
+    Updated README.md
+
+[33mcommit 7756884669dc18b7fc8648859176bc816868fb75[m
+Author: weeloong93 <weeloong.ng@u.nus.edu>
+Date:   Sat May 28 16:33:10 2016 +0800
+
+    Updated README.md
+
+[33mcommit 38d91d03fb0c29efa9815129690b10eb118d2264[m
+Author: weeloong93 <weeloong.ng@u.nus.edu>
+Date:   Sat May 28 16:25:01 2016 +0800
+
+    Updated README.md
+
+[33mcommit d62c5da018c8f13e581d9ac9b8f072ec74599062[m
+Author: Niaoshendan <Nelsontwb@hotmail.com>
+Date:   Sat May 28 15:13:49 2016 +0800
+
+    Add files via upload
+
+[33mcommit a0d06f1dc7c9baa4e9d2d6908bebc5285d9d7cdd[m
+Author: weeloong93 <weeloong.ng@u.nus.edu>
+Date:   Sat May 28 15:03:32 2016 +0800
+
+    Uploading Backend Framework
+
+[33mcommit d49beb22752dc90868da27214c654a9e993b665c[m
+Author: weeloong93 <weeloong.ng@u.nus.edu>
+Date:   Sat May 28 14:59:49 2016 +0800
+
+    NEWERR CHANGE
+    
+    asdasd
+
+[33mcommit 8fe42400377c5ff89ebc35075b9ffa67ce3408f7[m
+Author: weeloong93 <weeloong.ng@u.nus.edu>
+Date:   Sat May 28 14:57:28 2016 +0800
+
+    Change
+
+[33mcommit 4dab4f9c02a0ff9d4d0ad6c1cb14c0fccbac08d9[m
+Author: weeloong93 <weeloong.ng@u.nus.edu>
+Date:   Sat May 28 14:50:53 2016 +0800
+
+    Initial commit
