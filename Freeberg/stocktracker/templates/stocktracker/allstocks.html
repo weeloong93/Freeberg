@@ -1,0 +1,26 @@
+{% extends 'stocktracker/base.html' %}
+
+
+{% block body %}
+
+<div class="albums-container container-fluid">
+
+    <form class="search form-inline" role="form">
+        <div class="form-group">
+            <label for="company">Company:</label>
+            <input type="text" class="form-control" id="company">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+
+    {% for stock in stocks %}
+            <p>
+                {{ stock.ticker }},
+                {{ stock.lastprice }}USD
+                <a href="{% url 'stocktracker:individual_stock' stock.id %}" class="btn btn-primary btn-sm" role="button">View Details</a>
+            </p>
+    {% endfor %}
+
+
+
+{% endblock %}
