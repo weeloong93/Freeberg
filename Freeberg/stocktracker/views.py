@@ -52,6 +52,14 @@ def individual_stock(request, stock_id):
 
     # Stock Information per Stock
     stock1.lastprice = ystockquote.get_price(stock1)
+    stock1.volume = ystockquote.get_volume(stock1)
+    price_change = ystockquote.get_change(stock1)
+    market_cap = ystockquote.get_market_cap(stock1)
+    get_high = ystockquote.get_52_week_high(stock1)
+    get_low = ystockquote.get_52_week_low(stock1)
+    pb_ratio = ystockquote.get_price_book_ratio(stock1)
+    ebitda = ystockquote.get_ebitda(stock1)
+    dividend = ystockquote.get_dividend_yield(stock1)
 
     # Graph
 
@@ -93,12 +101,12 @@ def individual_stock(request, stock_id):
         x = data['x']
         y = data['y']
         for (i = 0; i < x.length; i++) {
-            y[i] = Math.pow(x[i], f)
+            y[i] = x[i]
         }
         source.trigger('change');
     """)
 
-    slider = vform(Slider(start=0.1, end=4, value=1, step=.1, title="power", callback=callback))
+    slider = vform(Slider(start=0, end=100, value=1, step=.1, title="power", callback=callback))
 
     widget_script, widget_div = components(slider)
     script, div = components(plot)
@@ -111,9 +119,11 @@ def individual_stock(request, stock_id):
                'the_script': script,
                'the_div':div,
                'thedate': dates_objects,
-               'dates':dates}
+               'dates':dates
+               }
 
     return render(request, 'stocktracker/individual.html', context)
 
 
 
+#lol
