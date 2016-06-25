@@ -1,5 +1,5 @@
 /* for base template*/
-body{background: white;}
+body{background: whitesmoke;}
 
 .navbar{
     border-radius:0;
@@ -9,19 +9,17 @@ body{background: white;}
 .navbar-brand{font-family: 'Satisfy','cursive';}
 
 .nav{
-     font-size: 16px;
+    font-size: 16px;
 }
-
-
-.form {
-    left: 0;
-    position:relative;
-    text-align:center;
-    /* relative position to shift the overlay up*/
-    top: -150px;
-    width: 100%;
-    background-color:rgba(0,0,0, 0.7);
-    color:white;
-    padding: 10px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+.index1{
+    padding-bottom: 20px;
+}
+.bg-1 {
+    background-color: #2f2f2f;
+    color: #ffffff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.date{
+    padding-top: 15px;
 }
