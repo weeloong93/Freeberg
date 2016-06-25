@@ -29,6 +29,7 @@ def weekday():
     else:
         return wtoday
 
+
 # Create your views here.
 
 def index(request):
@@ -52,6 +53,7 @@ def individual_stock(request, stock_id):
 
     # Stock Information per Stock
     stock1.lastprice = ystockquote.get_price(stock1)
+    stock1.getchange = ystockquote.get_change(stock1)
 
     # Graph
 

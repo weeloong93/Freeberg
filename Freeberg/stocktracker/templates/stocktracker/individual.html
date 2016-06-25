@@ -9,13 +9,15 @@
 
             <div class="col-sm-4">
 
-                <h2>{{ stock.ticker }},
-                {{ stock.lastprice }}SGD </h2>
+                <h3>{{ stock.ticker }},
+                {{ stock.lastprice }}SGD,
+                {{ stock.getchange }}
+                </h3>
 
 
             </div>
             <div class="col-sm-8">
-                <form class="search form-inline" role="form">
+                <form class="search form-inline date" role="form">
                     <div class="form-group">
                         <label for="startdate">From:</label>
                         <input type="date" class="form-control" id="startdate">
