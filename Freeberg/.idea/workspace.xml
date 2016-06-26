@@ -87,8 +87,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stocktracker/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2680">
-              <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+            <state relative-caret-position="703">
+              <caret line="191" column="86" selection-start-line="191" selection-start-column="86" selection-end-line="191" selection-end-column="86" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -764,9 +764,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="250" y="115" width="1440" height="910" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21594203" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21594203" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32818532" sideWeight="0.4967051" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31917632" sideWeight="0.5065898" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977098" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1134,8 +1134,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/stocktracker/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2680">
-          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+        <state relative-caret-position="703">
+          <caret line="191" column="86" selection-start-line="191" selection-start-column="86" selection-end-line="191" selection-end-column="86" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
