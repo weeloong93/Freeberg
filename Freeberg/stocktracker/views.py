@@ -1,3 +1,5 @@
+import numpy as np
+
 from django.shortcuts import render
 from django.shortcuts import get_object_or_404
 from django.template import loader
@@ -7,7 +9,7 @@ from bokeh.io import vform
 from bokeh.plotting import figure, Figure
 from bokeh.resources import CDN
 from bokeh.embed import components
-from bokeh.models import HoverTool, CrosshairTool, CustomJS, Slider, ColumnDataSource
+from bokeh.models import HoverTool, CrosshairTool, CustomJS, Slider, ColumnDataSource, Range1d, LinearAxis
 import ystockquote
 import datetime as dt
 from datetime import datetime
@@ -166,14 +168,12 @@ def comparison(request, stock_id1, stock_id2):
     for d in dates1:
         dates_objects1.append(datetime.strptime(d, '%Y-%m-%d'))
 
-    source1 = ColumnDataSource(data=dict(x=dates_objects1, y=stock_prices1, time=dates1))
-
     # Retrieve live data YYYY-MM-DD
     historical_price2 = ystockquote.get_historical_prices(stock2, '2013-01-24', current_day)
     correct_order2 = sorted(historical_price2)
     stock_prices2 = []
     dates2 = []
-    for values in correct_order1:
+    for values in correct_order2:
         stock_prices2.append(historical_price2[values]['Adj Close'])
         dates2.append(values)
 
@@ -186,12 +186,26 @@ def comparison(request, stock_id1, stock_id2):
     for d in dates2:
         dates_objects2.append(datetime.strptime(d, '%Y-%m-%d'))
 
-    source2 = ColumnDataSource(data=dict(x=dates_objects2, y=stock_prices2, time=dates2))
+    p1 = figure(x_axis_type="datetime", responsive=True, plot_height=250, toolbar_location=None)
 
-    plot = figure(x_axis_type="datetime", responsive=True, plot_height=250, toolbar_location=None)
-    plot.multi_line(source=[source1,source2],color=["firebrick", "navy"],line_width=4)
+    # Multiple Axises
+    min1 = min(stock_prices1)
+    max1 = max(stock_prices1)
+    min2 = min(stock_prices2)
+    max2 = max(stock_prices2)
 
-    script, div = components(plot)
+    p1.y_range = Range1d(start= min1- (min1/10),end=max1+ (min1/10))
+    p1.extra_y_ranges = {'range2':Range1d(start= min2- (min2/10),end=max2+ (min2/10))}
+    p1.add_layout(LinearAxis(y_range_name="range2"), 'right')
+
+    p1.line(np.array(dates_objects1, dtype=np.datetime64), stock_prices1, color='#b41f2e', legend=stock1.ticker)
+    p1.line(np.array(dates_objects2, dtype=np.datetime64), stock_prices2, y_range_name='range2', color='#1F78B4', legend=stock2.ticker)
+
+    p1.grid.grid_line_alpha = 0.3
+    p1.xaxis.axis_label = 'Date'
+    p1.yaxis.axis_label = 'Price'
+
+    script, div = components(p1)
 
 
     context = {'stock1': stock1,

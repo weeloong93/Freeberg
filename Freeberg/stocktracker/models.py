@@ -19,6 +19,7 @@ class Stock(models.Model):
     pb_ratio = models.FloatField(blank=True, default = 1)
     ebitda = models.FloatField(blank=True, default = 1)
     dividend = models.FloatField(blank=True, default = 1)
+    industry = models.CharField(max_length=20, blank=True, default = '-')
 
     def __str__(self):
         return self.ticker
