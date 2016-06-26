@@ -35,15 +35,18 @@ As business students with relatively less exposure to frameworks and coding, we 
 1.	Show live data in graphical format
 2.	Finish Stock Track Page
 3.	Start working on comparisons
+
 We had our stock tracker page up and running. This includes displaying the historical prices of stocks in graphical format. The graph is adjustable, users can select which timeframe to view the graph. These files may be found on Github
 
 ##Milestone 3
 1.	Comparison between 2 stocks 
 2.	My stocks page with log in functionality 
+
 By Milestone 3, we plan to be able to compare between 2 stocks. This will include displaying 2 historical prices of stocks in a graphical format. Side by side comparison of financial ratios between the 2 stocks. 
 We plan to create a unique user page, where users can have a snapshot view of allow their stock(name, price, change), on a single page. 
 
 ##User interface
 1.	Search button on navigation bar 
 2.	Explanation of services on index page  
+
 Search function on the nav bar immediately allows users to find detailed analysis of the company. The index page provide a list of services we offer to the user. 
