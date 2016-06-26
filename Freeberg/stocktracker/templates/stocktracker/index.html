@@ -4,53 +4,31 @@
 {% block body %}
 
     <!--image-->
-    <div class="image" >
+    <div class="image" id = background_image>
             <img src="../../static/stocktracker/images/background2.jpg" alt="background" width="100%" height="5%">
-            <div class="form">
-                <form class="search form-inline" role="form">
-                    <div class="form-group">
-                        <input type="test" class="form-control"  placeholder="Search">
-                        <button type="submit" class="btn btn-default">Submit</button>
-                    </div>
-                </form>
-            </div>
     </div>
         <!--3 components-->
-        <div class="jumbotron">
-            <div class="row">
-                <!--nested row to make the columns centred-->
-                <div class="col-md-8 col-md-offset-2">
-                    <div class="row>">
-                        <div class="col-md-4">
-                            <div class="thumbnail">
-                                <div class="caption">
-                                    <h3 class="text-center"><u><a href="#"style="color:#2b2d2f">My Stocks</a></u></h3>
-                                    <p class="text-center">Live information on stock performance</p>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="thumbnail">
-                                <div class="caption">
-                                    <h3 class="text-center"><u><a href="#"style="color:#2b2d2f">Stocktrack</a></u></h3>
-                                    <p class="text-center">A detailed analysis on stock performance</p>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="thumbnail">
-                                <div class="caption">
-                                    <h3 class="text-center"><u><a href="#"style="color:#2b2d2f">Comparison</a></u></h3>
-                                    <p class="text-center">Comparing the performance of 2 different stocks</p>
-                                </div>
-                             </div>
-                        </div>
-                    </div>
+     <div class="container-fluid index1 text-center ">
+        <h2>About FreeBerg</h2>
+        <div class="row">
+            <div class="col-sm-4 text-center">
+                <img src="../../static/stocktracker/images/my%20stock.png" class="img-rounded" alt="mystock" width="20%">
+                <a href="#"><u><h3>My Stock</h3></u></a>
+                <p>Keep track of your own stocks' performance </p>
                 </div>
+            <div class="col-sm-4 text-center">
+                <img src="../../static/stocktracker/images/stocktrack.png" class="img-rounded" alt="stocktrack" width="20%">
+                <a href="#"><u><h3>Stocktrack</h3></u></a>
+                <p>View detailed analysis of market stocks </p>
+            </div>
+            <div class="col-sm-4 text-center">
+               <img src="../../static/stocktracker/images/comparison.png" class="img-rounded" alt="comparison" width="20%">
+               <a href="#"><u><h3>Comparison</h3></u></a>
+              <p>Compare performance between 2 stocks</p>
             </div>
         </div>
+     </div>
 
 
 {% endblock %}
+

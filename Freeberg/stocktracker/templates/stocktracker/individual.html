@@ -5,31 +5,28 @@
 
 <div class="albums-container container-fluid">
 
-    <form class="search form-inline" role="form">
-        <div class="form-group">
-            <label for="company">Company:</label>
-            <input type="text" class="form-control" id="company">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-    </form>
-
     <div class="row">
 
             <div class="col-sm-4">
 
-                <h2>{{ stock.ticker }},
-                {{ stock.lastprice }}SGD </h2>
-                {% if float(stock.price_change) < 0 %}
-                    <h2>asldalsdsd</h2>
-                {% else %}
-                    <h2>no</h2>
-                {% endif %}
+                <h3>{{ stock.ticker }},
+                {{ stock.lastprice }}SGD,
+                {{ stock.price_change }}
 
-
-
+                    {%  if stock.getchange < 0 %}
+                <p>hijnfkenkefklnekf</p>
+              {% endif  %}
+                </h3>
+              {%  if stock.price_change < 0 %}
+                <p>hijnfkenkefklnekf</p>
+                  {% elif stock.price_change > 0 %}
+                        <p>sup</p>
+                  {% else %}
+                        <p>hi</p>
+              {% endif  %}
             </div>
             <div class="col-sm-8">
-                <form class="search form-inline" role="form">
+                <form class="search form-inline date" role="form">
                     <div class="form-group">
                         <label for="startdate">From:</label>
                         <input type="date" class="form-control" id="startdate">

@@ -1,0 +1,81 @@
+{% extends 'stocktracker/base.html' %}
+
+
+{% block body %}
+
+<div class="albums-container container-fluid">
+
+    <form class="search form-inline" role="form">
+        <div class="form-group">
+            <label for="company">Company:</label>
+            <input type="text" class="form-control" id="company">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+
+    <div class="row">
+
+            <div class="col-sm-4">
+
+                <h2>{{ stock1.ticker }},
+                {{ stock1.lastprice }}SGD </h2>
+                <h2>{{ stock2.ticker }},
+                {{ stock2.lastprice }}SGD </h2>
+
+
+            </div>
+            <div class="col-sm-8">
+                <form class="search form-inline" role="form">
+                    <div class="form-group">
+                        <label for="startdate">From:</label>
+                        <input type="date" class="form-control" id="startdate">
+                    </div>
+                    <div class="form-group">
+                        <label for="enddate">To:</label>
+                        <input type="date" class="form-control" id="enddate">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+            </div>
+    </div>
+
+    <!-- Graph-->
+    <link href="http://cdn.pydata.org/bokeh/release/bokeh-0.11.1.min.css" rel="stylesheet" type="text/css">
+    <link href="http://cdn.pydata.org/bokeh/release/bokeh-widgets-0.11.0.css" rel="stylesheet">
+    <script src="http://cdn.pydata.org/bokeh/release/bokeh-0.11.1.min.js"></script>
+    <script src="http://cdn.pydata.org/bokeh/release/bokeh-widgets-0.11.1.min.js"></script>
+    <script src="http://cdn.pydata.org/bokeh/release/bokeh-widgets-0.11.1.min.css"></script>
+
+
+    {{ the_div|safe }}
+    {{ the_script|safe }}
+
+    <div class="company-profile col-md-6">
+            <h2>Company Name</h2>
+            <p>{{stock.description}}</p>
+    </div>
+    <div class="company-fr col-md-6 table-responsive">
+        <h2>Company finanial ratio</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Financial Ratio</th>
+                    <th>Rates</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Market Cap</td>
+                    <td>company.marketcap</td>
+                </tr>
+                <tr>
+                    <td>PE ratio</td>
+                    <td>company.peratio</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </div>
+</div>
+{% endblock %}

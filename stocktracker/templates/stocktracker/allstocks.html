@@ -1,0 +1,17 @@
+{% extends 'stocktracker/base.html' %}
+
+
+{% block body %}
+
+
+    {% for stock in stocks %}
+            <p>
+                {{ stock.ticker }},
+                {{ stock.lastprice }}USD
+                <a href="{% url 'stocktracker:individual_stock' stock.id %}" class="btn btn-primary btn-sm" role="button">View Details</a>
+            </p>
+    {% endfor %}
+
+
+
+{% endblock %}
