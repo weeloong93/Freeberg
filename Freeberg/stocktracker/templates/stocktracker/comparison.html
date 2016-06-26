@@ -17,14 +17,10 @@
 
             <div class="col-sm-4">
 
-                <h2>{{ stock.ticker }},
-                {{ stock.lastprice }}SGD </h2>
-                {% if float(stock.price_change) < 0 %}
-                    <h2>asldalsdsd</h2>
-                {% else %}
-                    <h2>no</h2>
-                {% endif %}
-
+                <h2>{{ stock1.ticker }},
+                {{ stock1.lastprice }}SGD </h2>
+                <h2>{{ stock2.ticker }},
+                {{ stock2.lastprice }}SGD </h2>
 
 
             </div>
@@ -50,8 +46,6 @@
     <script src="http://cdn.pydata.org/bokeh/release/bokeh-widgets-0.11.1.min.js"></script>
     <script src="http://cdn.pydata.org/bokeh/release/bokeh-widgets-0.11.1.min.css"></script>
 
-    {{ widget_div|safe }}
-    {{ widget_script|safe }}
 
     {{ the_div|safe }}
     {{ the_script|safe }}
