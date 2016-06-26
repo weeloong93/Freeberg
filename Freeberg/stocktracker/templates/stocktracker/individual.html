@@ -12,9 +12,18 @@
                 <h3>{{ stock.ticker }},
                 {{ stock.lastprice }}SGD,
                 {{ stock.getchange }}
+
+                    {%  if stock.getchange < 0 %}
+                <p>hijnfkenkefklnekf</p>
+              {% endif  %}
                 </h3>
-
-
+              {%  if stock.getchange < 0 %}
+                <p>hijnfkenkefklnekf</p>
+                  {% elif stock.getchange > 0 %}
+                        <p>sup</p>
+                  {% else %}
+                        <p>hi</p>
+              {% endif  %}
             </div>
             <div class="col-sm-8">
                 <form class="search form-inline date" role="form">
