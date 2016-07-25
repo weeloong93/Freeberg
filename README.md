@@ -48,7 +48,7 @@ In the future, we seek to implement a personalisation page for the user to keep 
 5.  Graphical tools to visualise comparison of the companies financial information to the users
 
 ##Cognitive walkthrough
-We Focus on how easy it is for new users to accomplish tasks with the system.
-New users should be able to access the web page of the particular stocks by 
+We focused on how easy it is for new users to accomplish tasks with the system.
+New users should be able to access the web page of the particular stocks by
 1. click on the stocktracker page
 2. choosing their choice of stock to view
