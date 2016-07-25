@@ -58,5 +58,5 @@ New Users who want to compare different companies' stock information  can:
 3. select 2nd stock
 
 #Appendix
-For view the webapp, please download: 
+To view the webapp, please install packages: 
 Jinja2 / MarkupSafe / PyYAML / bokeh v 0.11.1 / django / djangorestframework / numpy / pandas / pip / python-dateutil / pytz / requests / setuptools /  six / tornado / ystockquote 
