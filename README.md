@@ -14,7 +14,7 @@ With these problems in mind, Freeberg aims to resolve these issues by allowing t
 
 ##Proposed Features for Minimum Viable Product
 * Live Stock Tracker that is able to extract Live data from the relevant websites and parse historical prices into graphical formats - easy access to financial information for user
-* Comparison of historical data in graphical format
+* Comparison of historical data in graphical format, providing visuals to allow users to understand compare companies immediately
 
 #Proposed Level of Achievement
 We are currently aiming for the `Project: Gemini` achievement. We plan to fulfill the following requirements in order meet this achievement:
@@ -28,25 +28,27 @@ We are currently aiming for the `Project: Gemini` achievement. We plan to fulfil
 Optional Features:
 * User saved stock list
 
-#Project Timeline
-As business students with relatively less exposure to frameworks and coding, we expect to spend a lot more time learning the relevant processes. In view of this, we have structured the timeline for our project as follows:
+#Project Achievement/ Deliverables
+As business students with relatively less exposure to frameworks and coding, we spent a lot of time learning about relevant modules and the implementation process. We have done up the stocktracker and comparison for the companies which allow users to retrieve and compared companies up-to-date information.
 
-##Acceptance Testing 
-1.	Show live data in graphical format
-2.	Finish Stock Track Page
-3.	Start working on comparisons
+##4 additional extension milestones completed 
+1.	Application specific: Using of Django framework to create webapp 
+2.	Adminstrative frontend: User interface to link to different webapp html pages 
+3.	Live Stock updates: using of ystockquote to pull up-to-date information from Yahoo Finance page
+4.	Downloading: Enable downloading of graphs and company information for 
 
-We had our stock tracker page up and running. This includes displaying the historical prices of stocks in graphical format. The graph is adjustable, users can select which timeframe to view the graph. These files may be found on Github
+##Future Release 
+In the future, we seek to implement a personalisation page for the user to keep track of their own stocks. It is regretfully not done in this project due to the lack of time. 
 
-##Milestone 3
-1.	Comparison between 2 stocks 
-2.	My stocks page with log in functionality 
+#User Experience 
+1. Index  to introduce our services to people with links to the different webapp.
+2.  Search function on the navigation bar to allow users to quickly search for the stocks
+3.  Webpage that have all the stocks divided into different industries to allow users to view the stocks via industries
+4.  Graphical tools that enable users to download and use the information
+5.  Graphical tools to visualise comparison of the companies financial information to the users
 
-By Milestone 3, we plan to be able to compare between 2 stocks. This will include displaying 2 historical prices of stocks in a graphical format. Side by side comparison of financial ratios between the 2 stocks. 
-We plan to create a unique user page, where users can have a snapshot view of allow their stock(name, price, change), on a single page. 
-
-##User interface
-1.	Search button on navigation bar 
-2.	Explanation of services on index page  
-
-Search function on the nav bar immediately allows users to find detailed analysis of the company. The index page provide a list of services we offer to the user. 
+##Cognitive walkthrough
+We Focus on how easy it is for new users to accomplish tasks with the system.
+New users should be able to access the web page of the particular stocks by 
+1. click on the stocktracker page
+2. choosing their choice of stock to view
