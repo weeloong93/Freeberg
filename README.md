@@ -23,7 +23,7 @@ We are currently aiming for the `Project: Gemini` achievement. We plan to fulfil
 * Build Django framework for our webapp
 * Extract Live Data through API
 * Application-specific feature extensions - Exporting Graphical Data
-* Comparison between multiple models
+* Enable downloading of data. 
 
 Optional Features:
 * User saved stock list
@@ -32,23 +32,31 @@ Optional Features:
 As business students with relatively less exposure to frameworks and coding, we spent a lot of time learning about relevant modules and the implementation process. We have done up the stocktracker and comparison for the companies which allow users to retrieve and compared companies up-to-date information.
 
 ##4 additional extension milestones completed 
-1.	Application specific: Using of Django framework to create webapp 
-2.	Adminstrative frontend: User interface to link to different webapp html pages 
-3.	Live Stock updates: using of ystockquote to pull up-to-date information from Yahoo Finance page
-4.	Downloading: Enable downloading of graphs and company information for 
+1.	Application specific: Built Django framework to create webapp 
+2.	Application specifc: Used Graphing tools to visualise data
+3.	Live Stock updates: Used of ystockquote to pull up-to-date information from Yahoo Finance page
+4.	Downloading: Enabled downloading of graphs and company information 
 
 ##Future Release 
 In the future, we seek to implement a personalisation page for the user to keep track of their own stocks. It is regretfully not done in this project due to the lack of time. 
 
 #User Experience 
 1. Index  to introduce our services to people with links to the different webapp.
-2.  Search function on the navigation bar to allow users to quickly search for the stocks
-3.  Webpage that have all the stocks divided into different industries to allow users to view the stocks via industries
-4.  Graphical tools that enable users to download and use the information
-5.  Graphical tools to visualise comparison of the companies financial information to the users
+2. Search function on the navigation bar to allow users to quickly search for the stocks
+3. Webpage that have all the stocks divided into different industries to allow users to view the stocks via industries
+4. Graphical tools that enable users to download and use the information
+5. Graphical tools to visualise comparison of the companies financial information to the users
 
 ##Cognitive walkthrough
 We focused on how easy it is for new users to accomplish tasks with the system.
-New users should be able to access the web page of the particular stocks by
+New users who want to access the individual stock information can: 
 1. click on the stocktracker page
 2. choosing their choice of stock to view
+New Users who want to compare different companies' stock information  can:  
+1. Click on comparison page 
+2. select 1st stock 
+3. select 2nd stock
+
+#Appendix
+For view the webapp, please download: 
+Jinja2 / MarkupSafe / PyYAML / bokeh v 0.11.1 / django / djangorestframework / numpy / pandas / pip / python-dateutil / pytz / requests / setuptools /  six / tornado / ystockquote 
